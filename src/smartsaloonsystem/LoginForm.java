@@ -28,7 +28,7 @@ public class LoginForm extends JFrame implements ActionListener{
         
         background = new JLabel("",img,JLabel.CENTER);
         background.setBounds(0,0,720,480);
-        frame.add(background);
+        //frame.add(background);
         
         frame.add(projectname);
         projectname.setBounds(150,50,500,30); 
