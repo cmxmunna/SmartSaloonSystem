@@ -1,0 +1,2 @@
+# SmartSaloonSystem
+ Java based Application
