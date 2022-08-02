@@ -1,13 +1,14 @@
-package smartsaloonsystem;
+//package smartsaloonsystem;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.event.ActionEvent.*;
 
-public class LoginForm extends JFrame implements ActionListener{
+public class LogIn extends JFrame implements ActionListener{
     
     JFrame frame = new JFrame();
-    ImageIcon img = new ImageIcon("D:\\AIUB\\SUMMER 21-22\\JAVA\\SmartSaloonSystem\\src\\smartsaloonsystem\\Background.jpg");
+    //ImageIcon img = new ImageIcon("Background.jpg");
     JLabel background,Error;
     Font consolas25 = new Font("Consolas",Font.BOLD,25);
     Font consolas15 = new Font("Consolas",Font.BOLD,15);
@@ -19,18 +20,19 @@ public class LoginForm extends JFrame implements ActionListener{
     JButton btn = new JButton("Login");
     
     
-    LoginForm(){
+    LogIn(){
         
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		frame.setTitle("LogIn");
         frame.setSize(720,480);
         frame.setLayout(null);
+		frame.setLocationRelativeTo(null);
         frame.setLocation(150,150);
         
-        background = new JLabel("",img,JLabel.CENTER);
         background.setBounds(0,0,720,480);
-        //frame.add(background);
+        frame.add(background);
         
-        frame.add(projectname);
+        //frame.add(projectname);
         projectname.setBounds(150,50,500,30); 
         projectname.setFont(consolas25);
         
@@ -75,8 +77,8 @@ public class LoginForm extends JFrame implements ActionListener{
                 Error.setText("Please Input your Credentials!");
             }
             else if(username.equals("Munna") && password.equals("123")){
-                frame.dispose();
-                Dashboard dashboard = new Dashboard();
+                new Dashboard();
+                frame.setVisible(false);
             }
             else{
                 Error.setText("Wrong Credentials! Try Again");

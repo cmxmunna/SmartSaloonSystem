@@ -1,4 +1,4 @@
-package smartsaloonsystem;
+//package smartsaloonsystem;
 
 import javax.swing.*;
 import java.awt.*;
@@ -59,8 +59,8 @@ public class Dashboard extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e){
         
         if(e.getSource() == btn){
-            frame.dispose();
-            LoginForm loginForm = new LoginForm();
+			new LogIn();
+            frame.setVisible(false);
         }
     }
     
