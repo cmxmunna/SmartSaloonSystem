@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T22:32:32.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="9bOq3P29Qc8A2KkZEFF2" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T22:33:44.096Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="AxEWclkXv9C0bhQA4LjQ" version="20.2.2" type="github">
   <diagram id="XYGxRXXZ5Q76HoIjaeJW" name="Page-1">
     <mxGraphModel dx="3422" dy="1204" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -169,7 +169,7 @@
         <mxCell id="3rOR_nvGrmlNI7nyaJbz-141" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;b&gt;Detsils History&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#292b31;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="-1428.5" y="580" width="124" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="3rOR_nvGrmlNI7nyaJbz-142" value="Data Table" style="shape=table;startSize=20;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;rounded=0;shadow=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;fillStyle=solid;fontFamily=Lucida Console;fontSize=9;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#292b31;gradientColor=none;html=1;" vertex="1" parent="1">
+        <mxCell id="3rOR_nvGrmlNI7nyaJbz-142" value="Table" style="shape=table;startSize=20;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;rounded=0;shadow=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;fillStyle=solid;fontFamily=Lucida Console;fontSize=9;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#292b31;gradientColor=none;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1558" y="308" width="374" height="260" as="geometry" />
         </mxCell>
         <mxCell id="3rOR_nvGrmlNI7nyaJbz-143" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;fillStyle=solid;fontFamily=Lucida Console;fontSize=9;fontColor=#FF0000;strokeColor=#FFFFFF;html=1;" vertex="1" parent="3rOR_nvGrmlNI7nyaJbz-142">
