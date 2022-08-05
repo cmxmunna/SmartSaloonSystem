@@ -29,8 +29,8 @@ public class LogIn extends JFrame implements ActionListener{
 		frame.setLocationRelativeTo(null);
         frame.setLocation(150,150);
         
-        background.setBounds(0,0,720,480);
-        frame.add(background);
+        //background.setBounds(0,0,720,480);
+        //frame.add(background);
         
         //frame.add(projectname);
         projectname.setBounds(150,50,500,30); 
