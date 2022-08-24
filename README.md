@@ -1,4 +1,4 @@
-# SmartSaloonSystem
+# Smart Saloon System
  Java based Application
 
 ## Institutional Inentity
