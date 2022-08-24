@@ -11,6 +11,7 @@ class SmartSaloon extends JFrame implements ActionListener
 	private JLabel background,l1,l2,l3,l4,l5,l6,l7;
 	private JButton b1,b2;
 	private Font f1, f2, f3, f4;
+    private ImageIcon icon;
 	
 	SmartSaloon()
 	{
@@ -25,6 +26,10 @@ class SmartSaloon extends JFrame implements ActionListener
 		background = new JLabel("",img,JLabel.CENTER);
 		background.setBounds(0,0,720,480);
 		add(background);
+		
+		// Icon
+        icon = new ImageIcon(getClass().getResource("Icon.png"));
+        this.setIconImage(icon.getImage());
 		
 		//Fonts
         f1 = new Font("Consolas", Font.BOLD, 15);

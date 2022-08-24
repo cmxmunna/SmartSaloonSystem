@@ -2,12 +2,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.event.ActionEvent.*;
+import java.sql.*;
+
 class Login extends JFrame implements ActionListener
 {
 	private JLabel background,Error,l1,l2,l3,l4;
 	private JButton b1,b2,b3,b4;
 	private Font f1, f2, f3, f4;
-	private JTextField user,pass;
+	private JTextField email,pass;
+    private ImageIcon icon;
 	
 	Login()
 	{
@@ -29,8 +32,11 @@ class Login extends JFrame implements ActionListener
         f3 = new Font("Consolas", Font.BOLD, 25);
         f4 = new Font("Consolas", Font.BOLD, 30);
 		
-		//Main Code
+		//Icon
+        icon = new ImageIcon(getClass().getResource("Icon.png"));
+        this.setIconImage(icon.getImage());
 		
+		//Main Code
 		b1 = new JButton("Home");
 		b1.setBounds(510,30,90,25);
 		b1.setForeground(Color.white);
@@ -58,17 +64,17 @@ class Login extends JFrame implements ActionListener
 		l2.setForeground(Color.white);
 		background.add(l2);
 		
-		l3 = new JLabel("Username");
+		l3 = new JLabel("Email");
         l3.setBounds(200,190,100,20);
 		l3.setForeground(Color.white);
         background.add(l3);
 		
-		user = new JTextField();
-		user.setBounds(280,190,130,25);
-		user.setForeground(Color.white);
-		user.setBackground(Color.decode("#292B31"));
-		user.setFocusable(true);
-		background.add(user);
+		email = new JTextField();
+		email.setBounds(280,190,130,25);
+		email.setForeground(Color.white);
+		email.setBackground(Color.decode("#292B31"));
+		email.setFocusable(true);
+		background.add(email);
 		
 		l4 = new JLabel("Password");
         l4.setBounds(200,220,100,25);
@@ -91,7 +97,7 @@ class Login extends JFrame implements ActionListener
 		
 		Error = new JLabel("");
         Error.setBounds(240,300,200,25);
-		Error.setForeground(Color.white);
+		Error.setForeground(Color.red);
         background.add(Error);
         
 		setVisible(true);
@@ -112,14 +118,18 @@ class Login extends JFrame implements ActionListener
 		   setVisible(false);
         }
         if(e.getSource() == b3){
-            
-            String username = user.getText();
+          
+			String Email = email.getText();
             String password = pass.getText();
-            if(username.equals("") && password.equals("")){
+            if(Email.equals("") && password.equals("")){
                 Error.setText("Please Input your Credentials!");
             }
-            else if(username.equals("Munna") && password.equals("123")){
+            else if(Email.equals("cmxmunna") && password.equals("123")){
                 new Dashboard();
+                setVisible(false);
+            }
+			else if(Email.equals("dristy") && password.equals("123")){
+                new UserData();
                 setVisible(false);
             }
             else{

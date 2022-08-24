@@ -11,6 +11,7 @@ class registration extends JFrame implements ActionListener
 	private Font f1, f2, f3, f4;
 	private JTextField tf1,tf2,tf3,tf4,tf5,tf6;
 	private JTextArea screen;
+    private ImageIcon icon;
 	
 	registration()
 	{
@@ -32,8 +33,11 @@ class registration extends JFrame implements ActionListener
         f3 = new Font("Consolas", Font.BOLD, 25);
         f4 = new Font("Consolas", Font.BOLD, 30);
 		
-		//Main Code
+		// Icon
+        icon = new ImageIcon(getClass().getResource("Icon.png"));
+        this.setIconImage(icon.getImage());
 		
+		//Main Code
 		b1 = new JButton("Home");
 		b1.setBounds(510,30,90,25);
 		b1.setForeground(Color.white);
